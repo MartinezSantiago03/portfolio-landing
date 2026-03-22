@@ -14,15 +14,15 @@
   <!-- ═══ NAVBAR ══════════════════════════════════════════════ -->
   <header class="navbar" id="navbar">
     <a href="#hero" class="nav-logo">D.S.M.H</a>
+    <button class="shadow__btn" id="lang-btn">EN | ES</button>
     <div class="nav-right">
       <nav class="nav-links">
         <a href="#hero" data-i18n="nav_home">Home</a>
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
         <a href="#services" data-i18n="nav_services">Services</a>
-        <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+        <a href="#tools" data-i18n="nav_tools">Tools</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
       </nav>
-      <button class="shadow__btn" id="lang-btn">EN | ES</button>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -105,6 +105,92 @@
     </div>
   </div>
 
+  <!-- ═══ SERVICES ═════════════════════════════════════════════ -->
+  <section id="services" class="section services-section">
+    <div class="services-bg-glow"></div>
+    <div class="services-tabs reveal">
+      <button class="tab active" data-tab="webdesign" data-i18n="tab_webdesign">Web Development</button>
+      <button class="tab" data-tab="branding" data-i18n="tab_branding">Digital Content</button>
+      <button class="tab" data-tab="development" data-i18n="tab_development">Learning & Growth</button>
+    </div>
+    <div class="services-content">
+      <div class="service-panel active" id="tab-webdesign">
+        <div class="service-info reveal">
+          <span class="service-exp" data-i18n="service_1_exp">Frontend Focus</span>
+          <h2 data-i18n="service_1_title">Web Development</h2>
+          <p data-i18n="service_1_desc">I build responsive and modern websites using HTML, CSS and JavaScript, focusing on clean design and user experience.</p>
+          <div class="service-btns">
+            <a href="#projects" class="btn btn-primary" data-i18n="btn_start">View Projects</a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="service-number reveal">01</div>
+      </div>
+      <div class="service-panel" id="tab-branding">
+        <div class="service-info reveal">
+          <span class="service-exp" data-i18n="service_2_exp">Content & Ads</span>
+          <h2 data-i18n="service_2_title">Digital Content & Marketing</h2>
+          <p data-i18n="service_2_desc">I create digital content for social media and support basic advertising campaigns using Meta Ads to help promote services and improve online presence.</p>
+          <div class="service-btns">
+            <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="service-number reveal">02</div>
+      </div>
+      <div class="service-panel" id="tab-development">
+        <div class="service-info reveal">
+          <span class="service-exp" data-i18n="service_3_exp">Always Learning</span>
+          <h2 data-i18n="service_3_title">Learning & Growth</h2>
+          <p data-i18n="service_3_desc">Currently improving my skills in frontend development, building real projects and learning new technologies to grow as a web developer.</p>
+          <div class="service-btns">
+            <a href="#projects" class="btn btn-primary" data-i18n="btn_my_projects">My Projects</a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="service-number reveal">03</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TOOLS ════════════════════════════════════════════════ -->
+  <section id="tools" class="tools-section section">
+    <div class="tools-ticker-label" data-i18n="tools_ticker_label">Explore my services</div>
+    <div class="section-header reveal">
+      <h2 class="section-title-big" data-i18n="tools_title">Technologies &<br><span class="outline-text" data-i18n="tools_title_outline">Tools</span></h2>
+      <p class="section-desc" data-i18n="tools_desc">Technologies I use to build websites and create digital content.</p>
+    </div>
+    
+    <div class="tools-container reveal">
+      <h3 class="tools-subtitle">Core Skills</h3>
+      <div class="tools-grid">
+        <div class="tool-card" onclick="openSkillModal('html_css')">
+          <div class="tool-icon"><i class="fab fa-html5"></i></div>
+          <div><strong data-i18n="tool_1_name">HTML / CSS</strong><span data-i18n="tool_1_desc">Frontend Structure</span></div>
+        </div>
+        <div class="tool-card" onclick="openSkillModal('js')">
+          <div class="tool-icon"><i class="fab fa-js"></i></div>
+          <div><strong data-i18n="tool_2_name">JavaScript</strong><span data-i18n="tool_2_desc">Interactivity</span></div>
+        </div>
+        <div class="tool-card" onclick="openSkillModal('responsive')">
+          <div class="tool-icon"><i class="fas fa-mobile-alt"></i></div>
+          <div><strong data-i18n="tool_3_name">Responsive Design</strong><span data-i18n="tool_3_desc">Mobile First</span></div>
+        </div>
+      </div>
+
+      <h3 class="tools-subtitle" style="margin-top: 3rem;">Secondary Tools</h3>
+      <div class="tools-grid">
+        <div class="tool-card" onclick="openSkillModal('github')">
+          <div class="tool-icon"><i class="fab fa-github"></i></div>
+          <div><strong data-i18n="tool_4_name">GitHub</strong><span data-i18n="tool_4_desc">Version Control</span></div>
+        </div>
+        <div class="tool-card" onclick="openSkillModal('figma')">
+          <div class="tool-icon"><i class="fab fa-figma"></i></div>
+          <div><strong data-i18n="tool_5_name">Figma</strong><span data-i18n="tool_5_desc">UI Design</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ PROJECTS ═════════════════════════════════════════════ -->
   <section id="projects" class="section">
     <div class="section-header reveal">
@@ -157,192 +243,67 @@
     </div>
   </div>
 
-  <!-- ═══ SERVICES ═════════════════════════════════════════════ -->
-  <section id="services" class="section services-section">
-    <div class="services-bg-glow"></div>
-    <div class="services-tabs reveal">
-      <button class="tab active" data-tab="webdesign" data-i18n="tab_webdesign">Web Design</button>
-      <button class="tab" data-tab="branding" data-i18n="tab_branding">Branding</button>
-      <button class="tab" data-tab="development" data-i18n="tab_development">Development</button>
-    </div>
-    <div class="services-content">
-      <div class="service-panel active" id="tab-webdesign">
-        <div class="service-info reveal">
-          <span class="service-exp" data-i18n="service_1_exp">5 Years Exp</span>
-          <h2 data-i18n="service_1_title">Web Design</h2>
-          <p data-i18n="service_1_desc">Since beginning my journey as a freelance designer nearly 8 years ago, I've done work for agencies, consulted for startups and collaborated with talented people to create digital products for businesses.</p>
-          <div class="service-btns">
-            <a href="#contact" class="btn btn-primary" data-i18n="btn_start">Start Now</a>
-            <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact">Contact Me</a>
-          </div>
-        </div>
-        <div class="service-number reveal">01</div>
-      </div>
-      <div class="service-panel" id="tab-branding">
-        <div class="service-info reveal">
-          <span class="service-exp" data-i18n="service_2_exp">4 Years Exp</span>
-          <h2 data-i18n="service_2_title">Branding</h2>
-          <p data-i18n="service_2_desc">Creating cohesive visual identities that communicate your brand's values and differentiate you in the market. From logo design to full brand systems.</p>
-          <div class="service-btns">
-            <a href="#contact" class="btn btn-primary" data-i18n="btn_start">Start Now</a>
-            <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact">Contact Me</a>
-          </div>
-        </div>
-        <div class="service-number reveal">02</div>
-      </div>
-      <div class="service-panel" id="tab-development">
-        <div class="service-info reveal">
-          <span class="service-exp" data-i18n="service_3_exp">6 Years Exp</span>
-          <h2 data-i18n="service_3_title">Development</h2>
-          <p data-i18n="service_3_desc">Clean, efficient code that brings designs to life. Specializing in HTML, CSS, JavaScript, and modern web technologies to build fast, responsive websites.</p>
-          <div class="service-btns">
-            <a href="#contact" class="btn btn-primary" data-i18n="btn_start">Start Now</a>
-            <a href="#contact" class="btn btn-ghost" data-i18n="btn_contact">Contact Me</a>
-          </div>
-        </div>
-        <div class="service-number reveal">03</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ TOOLS ════════════════════════════════════════════════ -->
-  <section class="tools-section section">
-    <div class="tools-ticker-label" data-i18n="tools_ticker_label">Explore my services</div>
-    <div class="section-header reveal">
-      <h2 class="section-title-big" data-i18n="tools_title">Mastered<br><span class="outline-text" data-i18n="tools_title_outline">Tools</span></h2>
-      <p class="section-desc" data-i18n="tools_desc">Proficient in industry-standard design software and tools.</p>
-    </div>
-    <div class="tools-grid reveal">
-      <a class="tool-card" href="#">
-        <div class="tool-icon">⚡</div>
-        <div><strong>HTML / CSS</strong><span data-i18n="tool_1_desc">Core Web</span></div>
-      </a>
-      <a class="tool-card" href="#">
-        <div class="tool-icon">🟡</div>
-        <div><strong>JavaScript</strong><span data-i18n="tool_2_desc">Frontend Dev</span></div>
-      </a>
-      <a class="tool-card" href="#">
-        <div class="tool-icon">🐙</div>
-        <div><strong>GitHub</strong><span data-i18n="tool_3_desc">Version Control</span></div>
-      </a>
-      <a class="tool-card" href="#">
-        <div class="tool-icon">🎨</div>
-        <div><strong>Figma</strong><span data-i18n="tool_4_desc">Design Tool</span></div>
-      </a>
-      <a class="tool-card" href="#">
-        <div class="tool-icon">📱</div>
-        <div><strong>Responsive</strong><span data-i18n="tool_5_desc">Mobile First</span></div>
-      </a>
-      <a class="tool-card" href="#">
-        <div class="tool-icon">📄</div>
-        <div><strong>MS Office</strong><span data-i18n="tool_6_desc">Productivity</span></div>
-      </a>
-    </div>
-  </section>
-
-  <!-- ═══ PROCESS ══════════════════════════════════════════════ -->
-  <section class="process-section section">
-    <div class="section-header reveal">
-      <h2 class="section-title-big" data-i18n="process_title">Work<br><span class="outline-text" data-i18n="process_title_outline">Process</span></h2>
-      <p class="section-desc" data-i18n="process_desc">A glimpse into my collaborative and iterative design process.</p>
-    </div>
-    <div class="process-grid">
-      <div class="process-card reveal">
-        <span class="process-num">01.</span>
-        <h4 data-i18n="process_1_title">Discovery<br>Session</h4>
-        <p data-i18n="process_1_desc">Understanding your goals, audience, and project requirements in depth.</p>
-      </div>
-      <div class="process-card reveal">
-        <span class="process-num">02.</span>
-        <h4 data-i18n="process_2_title">Strategy<br>Mapping</h4>
-        <p data-i18n="process_2_desc">Creating a clear roadmap and defining the visual direction.</p>
-      </div>
-      <div class="process-card reveal">
-        <span class="process-num">03.</span>
-        <h4 data-i18n="process_3_title">Prototype<br>Creation</h4>
-        <p data-i18n="process_3_desc">Building interactive prototypes to validate design decisions early.</p>
-      </div>
-      <div class="process-card reveal">
-        <span class="process-num">04.</span>
-        <h4 data-i18n="process_4_title">Final<br>Delivery</h4>
-        <p data-i18n="process_4_desc">Polished, production-ready deliverables with full handoff support.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ FAQ ══════════════════════════════════════════════════ -->
-  <section class="faq-section section">
-    <div class="section-header reveal">
-      <h2 class="section-title-big" data-i18n="faq_title">Common<br><span class="outline-text" data-i18n="faq_title_outline">Questions</span></h2>
-      <p class="section-desc" data-i18n="faq_desc">Helping you understand our process and offerings.</p>
-    </div>
-    <div class="faq-list reveal">
-      <div class="faq-item">
-        <button class="faq-question" data-i18n="faq_1_q">Why should I hire you? <span class="faq-icon">+</span></button>
-        <div class="faq-answer" data-i18n="faq_1_a">I specialize in web design and development for individuals and businesses, combining technical skill with creative thinking to deliver results that work.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" data-i18n="faq_2_q">How long will it take to complete my project? <span class="faq-icon">+</span></button>
-        <div class="faq-answer" data-i18n="faq_2_a">Timelines vary by scope. Basic projects typically take 1–2 weeks; larger builds 3–6 weeks. I provide clear timelines upfront after our discovery session.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" data-i18n="faq_3_q">How does your maintenance service work? <span class="faq-icon">+</span></button>
-        <div class="faq-answer" data-i18n="faq_3_a">I offer ongoing maintenance including content updates, bug fixes, performance optimization, and regular support depending on your plan.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" data-i18n="faq_4_q">What is your refund policy? <span class="faq-icon">+</span></button>
-        <div class="faq-answer" data-i18n="faq_4_a">Refunds are available if the product doesn't work as described. Since each project involves time and effort, change-of-mind refunds aren't offered, but I'm always happy to resolve issues.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" data-i18n="faq_5_q">Can I pay directly using my credit card? <span class="faq-icon">+</span></button>
-        <div class="faq-answer" data-i18n="faq_5_a">Yes, secure credit card payments are supported. You'll receive instant confirmation once the transaction is complete.</div>
-      </div>
-    </div>
-  </section>
-
   <!-- ═══ CONTACT ══════════════════════════════════════════════ -->
   <section id="contact" class="contact-section section">
     <div class="section-header reveal">
-      <h2 class="section-title-big" data-i18n="contact_title">Contact<br><span class="outline-text" data-i18n="contact_title_outline">For Work</span></h2>
+      <h2 class="section-title-big" data-i18n="contact_title">Let's Work<br><span class="outline-text" data-i18n="contact_title_outline">Together</span></h2>
+      <p class="section-desc" data-i18n="contact_desc">I'm open to job opportunities and collaborations. Feel free to reach out.</p>
     </div>
     <div class="contact-wrap reveal">
       <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <input type="email" placeholder="Your Email" data-i18n-placeholder="placeholder_email" required/>
-          <input type="tel" placeholder="Your Phone" data-i18n-placeholder="placeholder_phone"/>
-        </div>
-        <input type="text" placeholder="Your Budget" data-i18n-placeholder="placeholder_budget"/>
-        <select>
-          <option value="" disabled selected data-i18n="select_price_point">Select Price Point</option>
-          <option data-i18n="price_point_1">Less than $1,000</option>
-          <option data-i18n="price_point_2">$1,000 – $5,000</option>
-          <option data-i18n="price_point_3">$5,000 – $10,000</option>
-          <option data-i18n="price_point_4">$10,000 – $20,000</option>
-          <option data-i18n="price_point_5">More than $20,000</option>
-        </select>
-        <button type="submit" class="btn btn-primary btn-full" data-i18n="btn_submit">Submit Now</button>
-        <p class="slots-notice" data-i18n="slots_notice"><span class="avail-dot"></span> Available for 2 Slots</p>
+        <input name="name" type="text" placeholder="Your Name" data-i18n-placeholder="placeholder_name" required/>
+        <input name="email" type="email" placeholder="Your Email" data-i18n-placeholder="placeholder_email" required/>
+        <textarea name="message" placeholder="Your Message" data-i18n-placeholder="placeholder_message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary btn-full" data-i18n="btn_submit">Send Message</button>
       </form>
+
+      <div class="contact-info-extra">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Acacias / Meta, Colombia</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:damh0310@gmail.com">damh0310@gmail.com</a>
+        </div>
+        <div class="info-links">
+          <a href="https://github.com/MartinezSantiago03" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/santiagomartinez03/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ═══ FOOTER ═══════════════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer-left">
-      <p class="footer-logo">Santiago.</p>
+      <p class="footer-logo">Santiago Martinez.</p>
+      <p class="footer-phrase" data-i18n="footer_phrase">Building modern web solutions and digital content.</p>
       <div class="footer-tags">
-        <span data-i18n="footer_tag_1">High quality</span>
-        <span data-i18n="footer_tag_2">Creative</span>
-        <span data-i18n="footer_tag_3">Fast & Responsive</span>
-        <span data-i18n="footer_tag_4">Easy to Use</span>
-        <span data-i18n="footer_tag_5">100% SEO</span>
-        <span data-i18n="footer_tag_6">Collaboration</span>
+        <span data-i18n="footer_tag_1">Frontend Development</span>
+        <span data-i18n="footer_tag_2">Responsive Design</span>
+        <span data-i18n="footer_tag_3">JavaScript</span>
+        <span data-i18n="footer_tag_4">Digital Content</span>
       </div>
     </div>
     <div class="footer-right">
       <a href="#hero" class="btn btn-outline" data-i18n="back_to_top">Back to Top ↑</a>
     </div>
   </footer>
+
+  <!-- ═══ SKILL MODAL ═══════════════════════════════════════════ -->
+  <div id="skill-modal" class="skill-modal">
+    <div class="skill-modal-content">
+      <button class="skill-modal-close" onclick="closeSkillModal()">&times;</button>
+      <span class="skill-modal-icon" id="skill-icon">⚡</span>
+      <h3 class="skill-modal-title" id="skill-title">Skill Title</h3>
+      <p class="skill-modal-desc" id="skill-desc">Description will appear here.</p>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

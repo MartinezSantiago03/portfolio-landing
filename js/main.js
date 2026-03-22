@@ -1,7 +1,3 @@
-/* ════════════════════════════════════════════════════════════
-   main.js — Porty Clone interactions
-   ════════════════════════════════════════════════════════════ */
-
 /* ── Navbar scroll shadow ─────────────────────────────────── */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -30,7 +26,7 @@ const projectData = {
   },
   'project_2': {
     site: '#',
-    git: '#',
+    git: 'https://github.com/MartinezSantiago03/portfolio-landing',
     tech: [
       { class: 'fab fa-html5', name: 'HTML5' },
       { class: 'fab fa-css3-alt', name: 'CSS3' },
@@ -115,74 +111,59 @@ const translations = {
     project_1_desc: "Business website for a digital solutions brand, combining frontend development and digital content to promote services and improve online presence.",
     project_2_tag: "CSS, HTML, Java Script",
     project_2_desc: "Personal portfolio designed and developed to showcase projects, skills and responsive design practices.",
-    tab_webdesign: "Web Design",
-    tab_branding: "Branding",
-    tab_development: "Development",
-    service_1_exp: "5 Years Exp",
-    service_1_title: "Web Design",
-    service_1_desc: "Since beginning my journey as a freelance designer nearly 8 years ago, I've done work for agencies, consulted for startups and collaborated with talented people to create digital products for businesses.",
-    btn_start: "Start Now",
+    tab_webdesign: "Web Development",
+    tab_branding: "Digital Content",
+    tab_development: "Learning & Growth",
+    service_1_exp: "Frontend Focus",
+    service_1_title: "Web Development",
+    service_1_desc: "I build responsive and modern websites using HTML, CSS and JavaScript, focusing on clean design and user experience.",
+    btn_start: "View Projects",
+    btn_see_work: "See Work",
+    btn_my_projects: "My Projects",
     btn_contact: "Contact Me",
-    service_2_exp: "4 Years Exp",
-    service_2_title: "Branding",
-    service_2_desc: "Creating cohesive visual identities that communicate your brand's values and differentiate you in the market. From logo design to full brand systems.",
-    service_3_exp: "6 Years Exp",
-    service_3_title: "Development",
-    service_3_desc: "Clean, efficient code that brings designs to life. Specializing in HTML, CSS, JavaScript, and modern web technologies to build fast, responsive websites.",
+    service_2_exp: "Content & Ads",
+    service_2_title: "Digital Content & Marketing",
+    service_2_desc: "I create digital content for social media and support basic advertising campaigns using Meta Ads to help promote services and improve online presence.",
+    service_3_exp: "Always Learning",
+    service_3_title: "Learning & Growth",
+    service_3_desc: "Currently improving my skills in frontend development, building real projects and learning new technologies to grow as a web developer.",
     tools_ticker_label: "Explore my services",
-    tools_title: "Mastered<br><span class=\"outline-text\">Tools</span>",
+    tools_title: "Technologies &<br><span class=\"outline-text\">Tools</span>",
     tools_title_outline: "Tools",
-    tools_desc: "Proficient in industry-standard design software and tools.",
-    tool_1_desc: "Core Web",
-    tool_2_desc: "Frontend Dev",
-    tool_3_desc: "Version Control",
-    tool_4_desc: "Design Tool",
-    tool_5_desc: "Mobile First",
-    tool_6_desc: "Productivity",
-    process_title: "Work<br><span class=\"outline-text\">Process</span>",
-    process_title_outline: "Process",
-    process_desc: "A glimpse into my collaborative and iterative design process.",
-    process_1_title: "Discovery<br>Session",
-    process_1_desc: "Understanding your goals, audience, and project requirements in depth.",
-    process_2_title: "Strategy<br>Mapping",
-    process_2_desc: "Creating a clear roadmap and defining the visual direction.",
-    process_3_title: "Prototype<br>Creation",
-    process_3_desc: "Building interactive prototypes to validate design decisions early.",
-    process_4_title: "Final<br>Delivery",
-    process_4_desc: "Polished, production-ready deliverables with full handoff support.",
-    faq_title: "Common<br><span class=\"outline-text\">Questions</span>",
-    faq_title_outline: "Questions",
-    faq_desc: "Helping you understand our process and offerings.",
-    faq_1_q: "Why should I hire you? <span class=\"faq-icon\">+</span>",
-    faq_1_a: "I specialize in web design and development for individuals and businesses, combining technical skill with creative thinking to deliver results that work.",
-    faq_2_q: "How long will it take to complete my project? <span class=\"faq-icon\">+</span>",
-    faq_2_a: "Timelines vary by scope. Basic projects typically take 1–2 weeks; larger builds 3–6 weeks. I provide clear timelines upfront after our discovery session.",
-    faq_3_q: "How does your maintenance service work? <span class=\"faq-icon\">+</span>",
-    faq_3_a: "I offer ongoing maintenance including content updates, bug fixes, performance optimization, and regular support depending on your plan.",
-    faq_4_q: "What is your refund policy? <span class=\"faq-icon\">+</span>",
-    faq_4_a: "Refunds are available if the product doesn't work as described. Since each project involves time and effort, change-of-mind refunds aren't offered, but I'm always happy to resolve issues.",
-    faq_5_q: "Can I pay directly using my credit card? <span class=\"faq-icon\">+</span>",
-    faq_5_a: "Yes, secure credit card payments are supported. You'll receive instant confirmation once the transaction is complete.",
-    contact_title: "Contact<br><span class=\"outline-text\">For Work</span>",
-    contact_title_outline: "For Work",
+    tools_desc: "Technologies I use to build websites and create digital content.",
+    tool_1_name: "HTML / CSS",
+    tool_1_desc: "Frontend Structure",
+    tool_2_name: "JavaScript",
+    tool_2_desc: "Interactivity",
+    tool_3_name: "Responsive Design",
+    tool_3_desc: "Mobile First",
+    tool_4_name: "GitHub",
+    tool_4_desc: "Version Control",
+    tool_5_name: "Figma",
+    tool_5_desc: "UI Design",
+    contact_title: "Let's Work<br><span class=\"outline-text\">Together</span>",
+    contact_title_outline: "Together",
+    contact_desc: "I'm open to job opportunities and collaborations. Feel free to reach out.",
+    placeholder_name: "Your Name",
     placeholder_email: "Your Email",
-    placeholder_phone: "Your Phone",
-    placeholder_budget: "Your Budget",
-    select_price_point: "Select Price Point",
-    price_point_1: "Less than $1,000",
-    price_point_2: "$1,000 – $5,000",
-    price_point_3: "$5,000 – $10,000",
-    price_point_4: "$10,000 – $20,000",
-    price_point_5: "More than $20,000",
-    btn_submit: "Submit Now",
-    slots_notice: "<span class=\"avail-dot\"></span> Available for 2 Slots",
-    footer_tag_1: "High quality",
-    footer_tag_2: "Creative",
-    footer_tag_3: "Fast & Responsive",
-    footer_tag_4: "Easy to Use",
-    footer_tag_5: "100% SEO",
-    footer_tag_6: "Collaboration",
-    back_to_top: "Back to Top ↑"
+    placeholder_message: "Your Message",
+    btn_submit: "Send Message",
+    footer_phrase: "Building modern web solutions and digital content.",
+    footer_tag_1: "Frontend Development",
+    footer_tag_2: "Responsive Design",
+    footer_tag_3: "JavaScript",
+    footer_tag_4: "Digital Content",
+    back_to_top: "Back to Top ↑",
+    skill_html_css_title: "HTML / CSS",
+    skill_html_css_desc: "The foundation of the web. I use HTML5 for semantic structure and CSS3 for modern styling, including Flexbox, Grid, and animations.",
+    skill_js_title: "JavaScript",
+    skill_js_desc: "Adding life to websites. I focus on ES6+ features, DOM manipulation, and creating interactive user experiences.",
+    skill_responsive_title: "Responsive Design",
+    skill_responsive_desc: "Mobile-first approach. Ensuring that every website looks and works perfectly on any device, from smartphones to large desktops.",
+    skill_github_title: "GitHub",
+    skill_github_desc: "Version control and collaboration. I use Git to track changes, manage projects, and collaborate with other developers.",
+    skill_figma_title: "Figma",
+    skill_figma_desc: "Turning ideas into visuals. I use Figma to design clean, modern interfaces and prototypes before writing a single line of code."
   },
   es: {
     nav_home: "Inicio",
@@ -211,74 +192,59 @@ const translations = {
     project_1_desc: "Sitio web empresarial para una marca de soluciones digitales, combinando desarrollo frontend y contenido digital para promocionar servicios y mejorar la presencia online.",
     project_2_tag: "CSS, HTML, JavaScript",
     project_2_desc: "Portafolio personal diseñado y desarrollado para mostrar proyectos, habilidades y prácticas de diseño responsivo.",
-    tab_webdesign: "Diseño Web",
-    tab_branding: "Branding",
-    tab_development: "Desarrollo",
-    service_1_exp: "5 Años de Exp",
-    service_1_title: "Diseño Web",
-    service_1_desc: "Desde que comencé mi viaje como diseñador freelance hace casi 8 años, he trabajado para agencias, consultado para startups y colaborado con personas talentosas para crear productos digitales para empresas.",
-    btn_start: "Empezar Ahora",
+    tab_webdesign: "Desarrollo Web",
+    tab_branding: "Contenido Digital",
+    tab_development: "Aprendizaje y Crecimiento",
+    service_1_exp: "Enfoque Frontend",
+    service_1_title: "Desarrollo Web",
+    service_1_desc: "Construyo sitios web responsivos y modernos usando HTML, CSS y JavaScript, enfocándome en un diseño limpio y la experiencia del usuario.",
+    btn_start: "Ver Proyectos",
+    btn_see_work: "Ver Trabajo",
+    btn_my_projects: "Mis Proyectos",
     btn_contact: "Contáctame",
-    service_2_exp: "4 Años de Exp",
-    service_2_title: "Branding",
-    service_2_desc: "Creación de identidades visuales cohesivas que comunican los valores de su marca y lo diferencian en el mercado. Desde el diseño del logo hasta sistemas de marca completos.",
-    service_3_exp: "6 Años de Exp",
-    service_3_title: "Desarrollo",
-    service_3_desc: "Código limpio y eficiente que da vida a los diseños. Especializado en HTML, CSS, JavaScript y tecnologías web modernas para construir sitios rápidos y responsivos.",
+    service_2_exp: "Contenido y Ads",
+    service_2_title: "Contenido Digital y Marketing",
+    service_2_desc: "Creo contenido digital para redes sociales y apoyo campañas publicitarias básicas usando Meta Ads para ayudar a promocionar servicios y mejorar la presencia online.",
+    service_3_exp: "Siempre Aprendiendo",
+    service_3_title: "Aprendizaje y Crecimiento",
+    service_3_desc: "Actualmente mejorando mis habilidades en desarrollo frontend, construyendo proyectos reales y aprendiendo nuevas tecnologías para crecer como desarrollador web.",
     tools_ticker_label: "Explora mis servicios",
-    tools_title: "Herramientas<br><span class=\"outline-text\">Dominadas</span>",
-    tools_title_outline: "Dominadas",
-    tools_desc: "Competente en software y herramientas de diseño estándar de la industria.",
-    tool_1_desc: "Web Principal",
-    tool_2_desc: "Desarrollo Frontend",
-    tool_3_desc: "Control de Versiones",
-    tool_4_desc: "Herramienta de Diseño",
-    tool_5_desc: "Móvil Primero",
-    tool_6_desc: "Productividad",
-    process_title: "Proceso de<br><span class=\"outline-text\">Trabajo</span>",
-    process_title_outline: "Trabajo",
-    process_desc: "Un vistazo a mi proceso de diseño colaborativo e iterativo.",
-    process_1_title: "Sesión de<br>Descubrimiento",
-    process_1_desc: "Comprender sus objetivos, audiencia y requisitos del proyecto en profundidad.",
-    process_2_title: "Mapeo de<br>Estrategia",
-    process_2_desc: "Crear una hoja de ruta clara y definir la dirección visual.",
-    process_3_title: "Creación de<br>Prototipos",
-    process_3_desc: "Construir prototipos interactivos para validar las decisiones de diseño tempranamente.",
-    process_4_title: "Entrega<br>Final",
-    process_4_desc: "Entregables pulidos y listos para producción con soporte completo de entrega.",
-    faq_title: "Preguntas<br><span class=\"outline-text\">Comunes</span>",
-    faq_title_outline: "Comunes",
-    faq_desc: "Ayudándole a entender nuestro proceso y ofertas.",
-    faq_1_q: "¿Por qué debería contratarte? <span class=\"faq-icon\">+</span>",
-    faq_1_a: "Me especializo en diseño y desarrollo web para individuos y empresas, combinando habilidad técnica con pensamiento creativo para entregar resultados que funcionan.",
-    faq_2_q: "¿Cuánto tiempo tomará completar mi proyecto? <span class=\"faq-icon\">+</span>",
-    faq_2_a: "Los plazos varían según el alcance. Los proyectos básicos suelen tardar entre 1 y 2 semanas; las construcciones más grandes entre 3 y 6 semanas. Proporciono plazos claros por adelantado después de nuestra sesión de descubrimiento.",
-    faq_3_q: "¿Cómo funciona su servicio de mantenimiento? <span class=\"faq-icon\">+</span>",
-    faq_3_a: "Ofrezco mantenimiento continuo que incluye actualizaciones de contenido, corrección de errores, optimización del rendimiento y soporte regular según su plan.",
-    faq_4_q: "¿Cuál es su política de reembolso? <span class=\"faq-icon\">+</span>",
-    faq_4_a: "Los reembolsos están disponibles si el producto no funciona como se describe. Dado que cada proyecto implica tiempo y esfuerzo, no se ofrecen reembolsos por cambio de opinión, pero siempre estoy feliz de resolver problemas.",
-    faq_5_q: "¿Puedo pagar directamente usando mi tarjeta de crédito? <span class=\"faq-icon\">+</span>",
-    faq_5_a: "Sí, se admiten pagos seguros con tarjeta de crédito. Recibirá una confirmación instantánea una vez que se complete la transacción.",
-    contact_title: "Contacto para<br><span class=\"outline-text\">Trabajar</span>",
-    contact_title_outline: "Trabajar",
+    tools_title: "Tecnologías &<br><span class=\"outline-text\">Herramientas</span>",
+    tools_title_outline: "Herramientas",
+    tools_desc: "Tecnologías que utilizo para construir sitios web y crear contenido digital.",
+    tool_1_name: "HTML / CSS",
+    tool_1_desc: "Estructura Frontend",
+    tool_2_name: "JavaScript",
+    tool_2_desc: "Interactividad",
+    tool_3_name: "Diseño Responsivo",
+    tool_3_desc: "Móvil Primero",
+    tool_4_name: "GitHub",
+    tool_4_desc: "Control de Versiones",
+    tool_5_name: "Figma",
+    tool_5_desc: "Diseño UI",
+    contact_title: "Trabajemos<br><span class=\"outline-text\">Juntos</span>",
+    contact_title_outline: "Juntos",
+    contact_desc: "Estoy abierto a oportunidades laborales y colaboraciones. No dudes en contactarme.",
+    placeholder_name: "Tu Nombre",
     placeholder_email: "Tu Correo",
-    placeholder_phone: "Tu Teléfono",
-    placeholder_budget: "Tu Presupuesto",
-    select_price_point: "Selecciona el punto de precio",
-    price_point_1: "Menos de $1,000",
-    price_point_2: "$1,000 – $5,000",
-    price_point_3: "$5,000 – $10,000",
-    price_point_4: "$10,000 – $20,000",
-    price_point_5: "Más de $20,000",
-    btn_submit: "Enviar Ahora",
-    slots_notice: "<span class=\"avail-dot\"></span> Disponible para 2 Cupos",
-    footer_tag_1: "Alta calidad",
-    footer_tag_2: "Creativo",
-    footer_tag_3: "Rápido y Responsivo",
-    footer_tag_4: "Fácil de usar",
-    footer_tag_5: "100% SEO",
-    footer_tag_6: "Colaboración",
-    back_to_top: "Volver Arriba ↑"
+    placeholder_message: "Tu Mensaje",
+    btn_submit: "Enviar Mensaje",
+    footer_phrase: "Construyendo soluciones web modernas y contenido digital.",
+    footer_tag_1: "Desarrollo Frontend",
+    footer_tag_2: "Diseño Responsivo",
+    footer_tag_3: "JavaScript",
+    footer_tag_4: "Contenido Digital",
+    back_to_top: "Volver Arriba ↑",
+    skill_html_css_title: "HTML / CSS",
+    skill_html_css_desc: "La base de la web. Utilizo HTML5 para estructura semántica y CSS3 para estilos modernos, incluyendo Flexbox, Grid y animaciones.",
+    skill_js_title: "JavaScript",
+    skill_js_desc: "Dando vida a los sitios web. Me enfoco en características de ES6+, manipulación del DOM y creación de experiencias de usuario interactivas.",
+    skill_responsive_title: "Diseño Responsivo",
+    skill_responsive_desc: "Enfoque mobile-first. Asegurando que cada sitio web se vea y funcione perfectamente en cualquier dispositivo, desde smartphones hasta computadores.",
+    skill_github_title: "GitHub",
+    skill_github_desc: "Control de versiones y colaboración. Utilizo Git para rastrear cambios, gestionar proyectos y colaborar con otros desarrolladores.",
+    skill_figma_title: "Figma",
+    skill_figma_desc: "Transformando ideas en visuales. Uso Figma para diseñar interfaces limpias y modernas antes de escribir una sola línea de código."
   }
 };
 
@@ -339,34 +305,6 @@ const revealObserver = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* ── Counter animation ────────────────────────────────────── */
-function animateCounter(el) {
-  const target  = parseInt(el.dataset.target, 10);
-  const duration = 1600;
-  const start   = performance.now();
-
-  function step(now) {
-    const progress = Math.min((now - start) / duration, 1);
-    const eased    = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-    el.textContent = Math.floor(eased * target);
-    if (progress < 1) requestAnimationFrame(step);
-    else el.textContent = target;
-  }
-
-  requestAnimationFrame(step);
-}
-
-const counterObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter(entry.target);
-      counterObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
-
 /* ── Services tabs ────────────────────────────────────────── */
 document.querySelectorAll('.tab').forEach(btn => {
   btn.addEventListener('click', () => {
@@ -384,31 +322,103 @@ document.querySelectorAll('.tab').forEach(btn => {
   });
 });
 
-/* ── FAQ accordion ────────────────────────────────────────── */
-document.querySelectorAll('.faq-question').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const item    = btn.closest('.faq-item');
-    const isOpen  = item.classList.contains('open');
+/* ─── Mobile Hero Scroll Effect ───────────────────────────── */
+window.addEventListener('scroll', () => {
+  if (window.innerWidth <= 768) {
+    const heroRight = document.querySelector('.hero-right');
+    const scrollPos = window.scrollY;
+    
+    // Calculate blur and opacity based on scroll
+    // Start blurring after 50px, full blur at 300px
+    const blurVal = Math.min(scrollPos / 15, 10); 
+    const opacityVal = Math.max(1 - scrollPos / 400, 0);
+    
+    if (heroRight) {
+      heroRight.style.filter = `blur(${blurVal}px)`;
+      heroRight.style.opacity = opacityVal;
+    }
+  }
+});
 
-    // Close all
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-
-    // Toggle clicked
-    if (!isOpen) item.classList.add('open');
+/* ─── Textarea auto-resize ─────────────────────────────────── */
+const textarea = document.querySelector('.contact-form textarea');
+if (textarea) {
+  textarea.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
   });
+}
+
+/* ─── Skill Modals ────────────────────────────────────────── */
+const skillModal = document.getElementById('skill-modal');
+const skillIcon = document.getElementById('skill-icon');
+const skillTitle = document.getElementById('skill-title');
+const skillDesc = document.getElementById('skill-desc');
+
+const skillData = {
+  'html_css': { icon: '<i class="fab fa-html5"></i>', key: 'skill_html_css' },
+  'js': { icon: '<i class="fab fa-js"></i>', key: 'skill_js' },
+  'responsive': { icon: '<i class="fas fa-mobile-alt"></i>', key: 'skill_responsive' },
+  'github': { icon: '<i class="fab fa-github"></i>', key: 'skill_github' },
+  'figma': { icon: '<i class="fab fa-figma"></i>', key: 'skill_figma' }
+};
+
+function openSkillModal(skillId) {
+  const data = skillData[skillId];
+  if (!data) return;
+
+  skillIcon.innerHTML = data.icon;
+  skillTitle.textContent = translations[currentLang][data.key + '_title'];
+  skillDesc.textContent = translations[currentLang][data.key + '_desc'];
+
+  skillModal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSkillModal() {
+  skillModal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Close on outside click
+skillModal.addEventListener('click', (e) => {
+  if (e.target === skillModal) closeSkillModal();
 });
 
 /* ── Contact form submit ──────────────────────────────────── */
 function handleSubmit(e) {
   e.preventDefault();
+  
+  // Get form data
+  const formData = new FormData(e.target);
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const message = formData.get('message');
+  
+  // Email config
+  const myEmail = 'damh0310@gmail.com';
+  const subject = `Nuevo mensaje de portafolio - ${name}`;
+  const body = `Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`;
+  const mailtoUrl = `mailto:${myEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+  // Visual feedback
   const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = '✓ Message Sent!';
+  const originalText = btn.textContent;
+  
+  btn.textContent = '✓ Opening Email...';
   btn.style.background = '#4ade80';
   btn.style.color = '#000';
+
+  // Open default email client
   setTimeout(() => {
-    btn.textContent = 'Submit Now';
-    btn.style.background = '';
-    btn.style.color = '';
-    e.target.reset();
-  }, 3000);
+    window.location.href = mailtoUrl;
+    
+    // Reset button after a delay
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '';
+      btn.style.color = '';
+      e.target.reset();
+    }, 2000);
+  }, 1000);
 }
